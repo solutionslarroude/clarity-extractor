@@ -41,7 +41,7 @@ def process_request():
     while True:
         # Verifica se são meia-noite e 10
         now = datetime.now()
-        if now.hour == 0 and now.minute == 15:
+        if now.hour == 0 and now.minute == 30:
             print("Hora de fazer a requisição!")
             response = requests.get(url, headers=headers)
 
@@ -86,8 +86,8 @@ def process_request():
                 )
                 send_slack_message(message)
 
-            elif response.status_code == 500:
-                print("Erro 500: Servidor retornou erro. Tentando novamente.")
+            elif response.status_code in [500, 403, 401]:
+                print("Erro 500 ou 403 ou 401: Servidor retornou erro. Tentando novamente.")
                 continue  # Tentar novamente
 
             else:
