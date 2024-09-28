@@ -1,0 +1,568 @@
+{
+   "checksum": "95afd6888b4b1c481e29044fdf66cef7",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13340205670156499",
+               "date_last_used": "13366525597874481",
+               "guid": "2c00b2cf-df33-4492-90a3-05b2b51b503c",
+               "id": "6",
+               "name": "Welcome – larroude-data-prod – Google Cloud console",
+               "type": "url",
+               "url": "https://console.cloud.google.com/welcome?project=larroude-data-prod"
+            }, {
+               "date_added": "13340209431954010",
+               "date_last_used": "13355859991670532",
+               "guid": "c6db5433-3ca9-4408-b0ec-00193ec609f2",
+               "id": "7",
+               "name": "Data WH - Google Drive",
+               "type": "url",
+               "url": "https://drive.google.com/drive/folders/1J1tFI_4A0bcJ7Cj1tis6GQnvNNe3bb3u"
+            }, {
+               "date_added": "13354819448353992",
+               "date_last_used": "0",
+               "guid": "be72c2e0-3ac8-4879-aacc-46ff12a5e583",
+               "id": "8",
+               "name": "Data Collection Form for Looker - Solutions - Google Drive",
+               "type": "url",
+               "url": "https://drive.google.com/drive/folders/1YxD_Mt4bFLjygJjRS7j2EliqoM8XRkDe"
+            }, {
+               "date_added": "13363416837279366",
+               "date_last_used": "0",
+               "guid": "a903473e-9cca-4458-81fa-528ba3f7701b",
+               "id": "9",
+               "name": "Google Cloud Developer Architecture",
+               "type": "url",
+               "url": "https://googlecloudcheatsheet.withgoogle.com/architecture"
+            }, {
+               "date_added": "13363427050549819",
+               "date_last_used": "13363676425727095",
+               "guid": "fc07b8fe-099d-4829-a5c4-08337fee8243",
+               "id": "10",
+               "name": "ChatGPT",
+               "type": "url",
+               "url": "https://chatgpt.com/"
+            } ],
+            "date_added": "13340209423305909",
+            "date_last_used": "0",
+            "date_modified": "13363427050549819",
+            "guid": "47dd28b6-d9ac-4af4-a9d3-e4a29960c142",
+            "id": "5",
+            "name": "Programs",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13346642662376074",
+               "date_last_used": "0",
+               "guid": "1b70b3f5-0e4d-4047-92c2-b130ae363f1d",
+               "id": "12",
+               "name": "Migrate a MySQL Database to Google Cloud SQL: Challenge Lab | Google Cloud Skills Boost",
+               "type": "url",
+               "url": "https://www.cloudskillsboost.google/focuses/1740?parent=catalog"
+            }, {
+               "date_added": "13346643320093422",
+               "date_last_used": "0",
+               "guid": "bbb76d0d-00ae-4f55-b849-fa7868c59e35",
+               "id": "13",
+               "name": "Cloud SQL for PostgreSQL: Qwik Start | Google Cloud Skills Boost",
+               "type": "url",
+               "url": "https://www.cloudskillsboost.google/focuses/937?catalog_rank=%7B%22rank%22%3A2%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=28907024"
+            } ],
+            "date_added": "13346642656424308",
+            "date_last_used": "0",
+            "date_modified": "13346643320093422",
+            "guid": "870d84f5-0352-453d-aa05-ecdde12cc442",
+            "id": "11",
+            "name": "teste_migracao",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13349901560380988",
+               "date_last_used": "0",
+               "guid": "3bd32f8b-bc90-4182-973f-fb9748ae4f89",
+               "id": "15",
+               "name": "conta de serviço",
+               "type": "url",
+               "url": "https://github.com/data-integrations/wrangler/blob/develop/wrangler-docs/directives/format-date.md"
+            }, {
+               "date_added": "13350019510053668",
+               "date_last_used": "0",
+               "guid": "4698ac6b-bd7b-4815-9163-6a8c3b633dd5",
+               "id": "16",
+               "name": "Cloud Data Fusion: adicionando uma conta de serviço ao armazenamento seguro | por Justin Taras | Médio",
+               "type": "url",
+               "url": "https://jtaras.medium.com/cloud-data-fusion-adding-a-service-account-to-the-secure-store-8fb987af917a"
+            }, {
+               "date_added": "13350173400613933",
+               "date_last_used": "0",
+               "guid": "31f1a7b8-d6aa-4ee5-aee3-34ecb3e6e53b",
+               "id": "17",
+               "name": "Guias de instruções  |  Documentação do Cloud Data Fusion  |  Google Cloud",
+               "type": "url",
+               "url": "https://cloud.google.com/data-fusion/docs/how-to?hl=pt-br"
+            }, {
+               "date_added": "13350419810248821",
+               "date_last_used": "0",
+               "guid": "5fb23e69-2776-4aa0-bd4d-5a2ea624fbcc",
+               "id": "18",
+               "name": "GitHub - cdapio/cdap: An open source framework for building data analytic applications.",
+               "type": "url",
+               "url": "https://github.com/cdapio/cdap/tree/develop"
+            }, {
+               "date_added": "13357762397582196",
+               "date_last_used": "0",
+               "guid": "c6c0e7e2-c764-486a-aa3d-a3c61964c062",
+               "id": "19",
+               "name": "Crie processos ETL conectados ao Facebook no Google Data Fusion",
+               "type": "url",
+               "url": "https://www.cdata.com/kb/tech/facebook-jdbc-google-data-fusion.rst"
+            }, {
+               "date_added": "13357848289736236",
+               "date_last_used": "0",
+               "guid": "79d47c18-a204-411a-9ae9-811415aee171",
+               "id": "20",
+               "name": "Build Facebook-Connected ETL Processes in Google Data Fusion",
+               "type": "url",
+               "url": "https://www.cdata.com/kb/tech/facebook-jdbc-google-data-fusion.rst"
+            } ],
+            "date_added": "13349901557935755",
+            "date_last_used": "0",
+            "date_modified": "13357848289736236",
+            "guid": "dcf68601-6014-427b-ba0f-8206bebefb6c",
+            "id": "14",
+            "name": "Data Fusion",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13350147868370639",
+               "date_last_used": "0",
+               "guid": "6e3364bd-5069-4ce2-b7e5-e478286fdf67",
+               "id": "22",
+               "name": "Reference overview  |  Apps Script  |  Google for Developers",
+               "type": "url",
+               "url": "https://developers.google.com/apps-script/reference"
+            }, {
+               "date_added": "13346368558545142",
+               "date_last_used": "13346411460468499",
+               "guid": "06259b59-2f49-4eef-a270-6df311544ef7",
+               "id": "23",
+               "name": "Conecte-se ao Cloud SQL  |  BigQuery  |  Google Cloud",
+               "type": "url",
+               "url": "https://cloud.google.com/bigquery/docs/connect-to-sql?hl=pt-br"
+            }, {
+               "date_added": "13346275222890821",
+               "date_last_used": "0",
+               "guid": "7d3cbc1d-fbcd-47a7-bc06-7823abdd7c20",
+               "id": "24",
+               "name": "Welcome – larroude-data-prod – Google Cloud console",
+               "type": "url",
+               "url": "https://console.cloud.google.com/welcome?project=larroude-data-prod"
+            }, {
+               "date_added": "13346275228293724",
+               "date_last_used": "13361018226576503",
+               "guid": "0cdae94c-a289-47b7-a4eb-f02443d90509",
+               "id": "25",
+               "name": "Cloud Data Fusion | Pipeline",
+               "type": "url",
+               "url": "https://gdfusion-larroude-cluster-larroude-data-prod-dot-usc1.datafusion.googleusercontent.com/cdap/ns/larroude_data_prod/pipelines"
+            }, {
+               "date_added": "13350526400925182",
+               "date_last_used": "0",
+               "guid": "57b584cd-6b2d-4cf2-b38c-0feb00bfd02f",
+               "id": "26",
+               "name": "Fonte de lote do Planilhas Google - Documentação CDAP - Confluence",
+               "type": "url",
+               "url": "https://cdap.atlassian.net/wiki/spaces/DOCS/pages/763265042/Google+Sheets+Batch+Source#Steps-to-Generate-OAuth2-Credentials"
+            } ],
+            "date_added": "13350147864546832",
+            "date_last_used": "0",
+            "date_modified": "13350526400925182",
+            "guid": "fee7cdd6-06a6-45d2-8c70-49ac3eb5112a",
+            "id": "21",
+            "name": "Google",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13350429951478257",
+               "date_last_used": "0",
+               "guid": "b1d14cb1-a5d3-425a-a296-22689808f780",
+               "id": "28",
+               "name": "CDAP User - Google Groups",
+               "type": "url",
+               "url": "https://groups.google.com/g/cdap-user"
+            }, {
+               "date_added": "13350431557240803",
+               "date_last_used": "13356448599433195",
+               "guid": "62e96dbb-c1a5-4192-8927-13d5440f551c",
+               "id": "29",
+               "name": "Gsheets spreadsheet connections with Data Fusion : brdev",
+               "type": "url",
+               "url": "https://www.reddit.com/r/brdev/comments/19d6ikc/gsheets_spreadsheet_connections_with_data_fusion/"
+            }, {
+               "date_added": "13357407481657122",
+               "date_last_used": "0",
+               "guid": "a4892793-fdf2-441f-8a77-80c074a6a0ca",
+               "id": "30",
+               "name": "Cloud Community",
+               "type": "url",
+               "url": "https://www.googlecloudcommunity.com/gc/Google-Cloud/ct-p/google-cloud"
+            } ],
+            "date_added": "13350429940717593",
+            "date_last_used": "0",
+            "date_modified": "13357407481657122",
+            "guid": "101df0e7-363c-4a0a-ba1b-2208859df086",
+            "id": "27",
+            "name": "foruns",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13351881452077858",
+               "date_last_used": "0",
+               "guid": "e9e477fc-58f6-41f7-aa62-1f445d0d3243",
+               "id": "32",
+               "name": "ShipMonk Public API · Apiary",
+               "type": "url",
+               "url": "https://shipmonkapi.docs.apiary.io/#reference/warehouses/list-all-warehouses/list-all-warehouses"
+            }, {
+               "date_added": "13351881481264681",
+               "date_last_used": "13363363559144378",
+               "guid": "3d75cd50-35fa-41af-8a0f-80ab2a4fd168",
+               "id": "33",
+               "name": "Shopify Report",
+               "type": "url",
+               "url": "https://shopify.dev/docs/api/admin-rest/2023-04/resources/report"
+            }, {
+               "date_added": "13354223624203267",
+               "date_last_used": "0",
+               "guid": "10e7bc3d-56cd-4540-aef9-2f2ae98f5cc4",
+               "id": "34",
+               "name": "GraphQL Admin API reference",
+               "type": "url",
+               "url": "https://shopify.dev/docs/api/admin-graphql"
+            }, {
+               "date_added": "13357688834106371",
+               "date_last_used": "0",
+               "guid": "e62a3b31-f8e2-497a-94da-3d583378ba04",
+               "id": "35",
+               "name": "GraphQL Admin API reference",
+               "type": "url",
+               "url": "https://shopify.dev/docs/api/admin-graphql"
+            }, {
+               "date_added": "13363680932479590",
+               "date_last_used": "0",
+               "guid": "eef5c0ce-3a8a-4909-b07b-fd7a7dc15822",
+               "id": "36",
+               "name": "GraphQL Admin API reference",
+               "type": "url",
+               "url": "https://shopify.dev/docs/api/admin-graphql"
+            } ],
+            "date_added": "13351881422781837",
+            "date_last_used": "0",
+            "date_modified": "13363680932479590",
+            "guid": "c88ec500-02fc-490e-8cb6-90bbdb89ba87",
+            "id": "31",
+            "name": "URLAPI's",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13350408691176089",
+               "date_last_used": "0",
+               "guid": "6bce79ed-9020-4951-b567-d3ef283c6bf3",
+               "id": "38",
+               "name": "CDAP",
+               "type": "url",
+               "url": "http://localhost:11011/cdap/ns/default/"
+            }, {
+               "date_added": "13353119750435124",
+               "date_last_used": "13355251080920836",
+               "guid": "843aa429-f6c1-4a23-b5bc-adc989a154da",
+               "id": "39",
+               "name": "Aaron Pestel – Medium",
+               "type": "url",
+               "url": "https://medium.com/@ammppp"
+            }, {
+               "date_added": "13353119792093037",
+               "date_last_used": "0",
+               "guid": "bada0012-46d1-4742-ac55-90515b7b031e",
+               "id": "40",
+               "name": "Justin Taras – Medium",
+               "type": "url",
+               "url": "https://jtaras.medium.com/"
+            }, {
+               "date_added": "13353119831312144",
+               "date_last_used": "0",
+               "guid": "f9435a3d-5829-4b8b-b821-392cbf878b47",
+               "id": "41",
+               "name": "Google Sheets Batch Source - CDAP Documentation - Confluence",
+               "type": "url",
+               "url": "https://cdap.atlassian.net/wiki/spaces/DOCS/pages/763265042/Google+Sheets+Batch+Source"
+            }, {
+               "date_added": "13353119881386306",
+               "date_last_used": "0",
+               "guid": "e25e8d3b-5a92-4ac0-b240-90fbf30e6312",
+               "id": "42",
+               "name": "CDAP User - Google Groups",
+               "type": "url",
+               "url": "https://groups.google.com/g/cdap-user?pli=1"
+            }, {
+               "date_added": "13355074487994591",
+               "date_last_used": "0",
+               "guid": "df62c01f-c990-48ab-b9bd-20e77d2f2fca",
+               "id": "43",
+               "name": "OAuth 2.0 Playground",
+               "type": "url",
+               "url": "https://developers.google.com/oauthplayground/?code=4/0AeaYSHBlHrNFP2M8nb1k-QV9xw5BTn9c9BC3edDNUttJPY_x0aNEqO3qkV7sJH29jtSXLg&scope=https://www.googleapis.com/auth/spreadsheets"
+            }, {
+               "date_added": "13355332916577880",
+               "date_last_used": "13358567648293316",
+               "guid": "f110b8b2-702f-452a-87f8-3f0623a96b8b",
+               "id": "44",
+               "name": "Status serviços da Google",
+               "type": "url",
+               "url": "https://status.cloud.google.com/regional/americas"
+            }, {
+               "date_added": "13357318518688103",
+               "date_last_used": "13367058001328137",
+               "guid": "387ad0b2-68bd-4118-a522-5945cbe0eed2",
+               "id": "45",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "APIs & Services – APIs & Services – larroude-data-prod – Google Cloud console",
+               "type": "url",
+               "url": "https://console.cloud.google.com/apis/dashboard?project=larroude-data-prod"
+            }, {
+               "date_added": "13357407851416324",
+               "date_last_used": "0",
+               "guid": "7397f0f3-018b-4d75-9b9a-91e39116f9c7",
+               "id": "46",
+               "name": "Documentação Data Fusion",
+               "type": "url",
+               "url": "https://cloud.google.com/data-fusion/docs/create-data-pipeline?hl=pt-br"
+            }, {
+               "date_added": "13365924658845304",
+               "date_last_used": "0",
+               "guid": "fa95e8e7-8e05-47a5-b2bc-869f4746a181",
+               "id": "47",
+               "name": "wrangler/wrangler-docs/directives/find-and-replace.md at develop · data-integrations/wrangler · GitHub",
+               "type": "url",
+               "url": "https://github.com/data-integrations/wrangler/blob/develop/wrangler-docs/directives/find-and-replace.md"
+            } ],
+            "date_added": "13353119728396539",
+            "date_last_used": "0",
+            "date_modified": "13365924658845304",
+            "guid": "1444c4db-116f-44a2-831a-3e53bf722791",
+            "id": "37",
+            "name": "CDAP",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13354819518209373",
+               "date_last_used": "0",
+               "guid": "0524b862-6de3-4566-aed9-5b80091be326",
+               "id": "49",
+               "name": "Formulário de Coleta de Dados para Looker - Google Forms",
+               "type": "url",
+               "url": "https://docs.google.com/forms/d/167nm3wnu0o2gKp5DRcgCRT08YH-sHffyUwrEYr6MTm4/edit#response=ACYDBNhHR7B74fp0bYDqr-WoMQGSGD4QvvJLSizWx98O7VjwvW6Q5axXVrguPKIYBKmUKXg"
+            }, {
+               "children": [ {
+                  "children": [ {
+                     "date_added": "13354833117004206",
+                     "date_last_used": "0",
+                     "guid": "1aa324d4-9e96-4102-ba5e-b95549395c28",
+                     "id": "52",
+                     "name": "Build Facebook-Connected ETL Processes in Google Data Fusion",
+                     "type": "url",
+                     "url": "https://www.cdata.com/kb/tech/facebook-jdbc-google-data-fusion.rst"
+                  }, {
+                     "date_added": "13354831156241930",
+                     "date_last_used": "0",
+                     "guid": "24a1eb59-3d66-40f6-aa33-6125033d8a3f",
+                     "id": "53",
+                     "name": "Marketing API",
+                     "type": "url",
+                     "url": "https://developers.facebook.com/docs/marketing-apis/"
+                  } ],
+                  "date_added": "13354833124378263",
+                  "date_last_used": "0",
+                  "date_modified": "13354833124378263",
+                  "guid": "be5a664a-fe4d-4a6e-84b4-f407576dba96",
+                  "id": "51",
+                  "name": "Facebook",
+                  "type": "folder"
+               } ],
+               "date_added": "13354831082577386",
+               "date_last_used": "0",
+               "date_modified": "13354831082577386",
+               "guid": "6a8c918f-a6a7-44fb-a175-c4cba47bf3e4",
+               "id": "50",
+               "name": "API",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "children": [ {
+                     "date_added": "13354825445008805",
+                     "date_last_used": "0",
+                     "guid": "593b1707-fdb3-4f93-a134-26cf8888df18",
+                     "id": "56",
+                     "name": "Untitled Diagram.drawio - draw.io",
+                     "type": "url",
+                     "url": "https://app.diagrams.net/#G1n5hFr60Vv4Zr9dqk93sUullbpWy4rgFw#%7B%22pageId%22%3A%22aUYpbK9mjyKQQ1QHwonT%22%7D"
+                  }, {
+                     "date_added": "13354828772736060",
+                     "date_last_used": "0",
+                     "guid": "baa3d585-e121-450c-acc2-c51bda2519b0",
+                     "id": "57",
+                     "name": "Analytics | Home",
+                     "type": "url",
+                     "url": "https://analytics.google.com/analytics/web/#/p421928725/reports/intelligenthome"
+                  } ],
+                  "date_added": "13354825433523418",
+                  "date_last_used": "0",
+                  "date_modified": "13354828772736060",
+                  "guid": "8328c62e-81d3-45ee-8855-a3f7ac8bde94",
+                  "id": "55",
+                  "name": "GA4",
+                  "type": "folder"
+               } ],
+               "date_added": "13354831088185626",
+               "date_last_used": "0",
+               "date_modified": "13354831088185626",
+               "guid": "21e43ef4-8963-458e-ada3-714320cecc91",
+               "id": "54",
+               "name": "Outros",
+               "type": "folder"
+            }, {
+               "children": [  ],
+               "date_added": "13354831094611402",
+               "date_last_used": "0",
+               "date_modified": "13354831094611402",
+               "guid": "ea48011a-2737-4b14-bbc7-a357b59b523d",
+               "id": "58",
+               "name": "Google Cloud",
+               "type": "folder"
+            }, {
+               "date_added": "13354831105757200",
+               "date_last_used": "0",
+               "guid": "8f37a392-5da0-4841-aace-eae41f3988aa",
+               "id": "59",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Senda",
+               "type": "url",
+               "url": "https://docs.google.com/forms/d/167nm3wnu0o2gKp5DRcgCRT08YH-sHffyUwrEYr6MTm4/edit#response=ACYDBNjlSo3_xfAS_7JsWJxcKrF1KTNdWtKqf5KzHZuCvvxAqSSEddglPg3MIz2PQqEKGpc"
+            }, {
+               "children": [  ],
+               "date_added": "13354831112226731",
+               "date_last_used": "0",
+               "date_modified": "13354831112226731",
+               "guid": "8b1a32eb-9df9-4e1a-b676-e2c915cdba7e",
+               "id": "60",
+               "name": "Banco de Dados",
+               "type": "folder"
+            } ],
+            "date_added": "13354819497833383",
+            "date_last_used": "0",
+            "date_modified": "13354831105757200",
+            "guid": "ac83845f-a6d1-47cb-ae28-f94a7d99d3da",
+            "id": "48",
+            "name": "Integration",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13355243530215015",
+               "date_last_used": "13355267955918306",
+               "guid": "129608f9-530b-4d78-b398-fc1b1b28ea1a",
+               "id": "62",
+               "name": "ChatGPT",
+               "type": "url",
+               "url": "https://chat.openai.com/"
+            } ],
+            "date_added": "13355243476160661",
+            "date_last_used": "0",
+            "date_modified": "13355243530215015",
+            "guid": "40175083-6b2e-4eca-8b57-71b9aad1489b",
+            "id": "61",
+            "name": "IA",
+            "type": "folder"
+         }, {
+            "date_added": "13357398163649027",
+            "date_last_used": "0",
+            "guid": "14ba16e0-29ab-41d8-a55d-7b130f9d881c",
+            "id": "63",
+            "name": "Cloud Data Fusion - Falha na 'fase 1' do programa Spark... - Google Cloud Community",
+            "type": "url",
+            "url": "https://www.googlecloudcommunity.com/gc/Data-Analytics/Cloud-Data-Fusion-Spark-program-phase-1-failed-with-error-The/m-p/707855"
+         }, {
+            "date_added": "13363681312918364",
+            "date_last_used": "0",
+            "guid": "05d0b316-5181-4f00-b195-c837c8d10fd3",
+            "id": "64",
+            "name": "Extract Shopify Data",
+            "type": "url",
+            "url": "https://chatgpt.com/share/04076ff0-8830-4243-b48c-904538c4021d"
+         }, {
+            "date_added": "13366635876124613",
+            "date_last_used": "0",
+            "guid": "d2d0291c-b621-4196-8502-39ad3822724e",
+            "id": "65",
+            "name": "Erro no CDAP Startup",
+            "type": "url",
+            "url": "https://chatgpt.com/share/2d50405c-35d9-412b-9c3b-bd06e049aedc"
+         } ],
+         "date_added": "13371748484952595",
+         "date_last_used": "0",
+         "date_modified": "13366635876124613",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Barra de favoritos",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13355257345851951",
+            "date_last_used": "0",
+            "guid": "b85958d8-95f8-44f9-85aa-987078e56740",
+            "id": "66",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "CDAP | Pipeline | ODS-GSHEETS-SALES-REPORT-DROPSHIP-DAILY-PROVISORIA",
+            "type": "url",
+            "url": "http://localhost:11011/pipelines/ns/larroude_data_prod/view/ODS-GSHEETS-SALES-REPORT-DROPSHIP-DAILY-PROVISORIA"
+         }, {
+            "date_added": "13371951367835212",
+            "date_last_used": "0",
+            "guid": "12e22fac-6f1c-41ce-8082-8edd77c872eb",
+            "id": "68",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Nova guia",
+            "type": "url",
+            "url": "chrome://newtab/"
+         } ],
+         "date_added": "13371748484952598",
+         "date_last_used": "0",
+         "date_modified": "13371951367835212",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Outros favoritos",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13371748484952602",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Favoritos nos dispositivos móveis",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CqoBCokBCIiBAhKCASAAkgF9CjQKDmNocm9tZV9zeW5jX2JtEgU1MSFibRoSCbsYWtIhIwYAEbsYWtIhIwYAKfVgWtIhIwYACkUKFmFubm90YXRpb25fY2hyb21lX3N5bmMSBTUxIWJkGhIJAJX4zCEjBgARAJX4zCEjBgApFmFa0iEjBgAwgKri55zkiAMSACoYYlQ5Q05aVG1NSDk0ZW5kR1NMa0FwUT09SAMS6wEIOBLmAQocMExabUFYMDMxcWJ6UDM4OU94Y2xlMWZTUi80PRJmWjpBRHF0QVp4QU1veFBtblF6Z29BaXgwZ2U1d3F1aFNpN1dEcjJ5akNhVUVoMUZIMzNhWkwwb2l2VndXWERyenM0cTZNV1ZiRzlSaTM3dDYrK0daNmZXTGpqTm84Z3FqdTdIUT09GAAgACgAMMLUppLl8YQDOJGNqMfjMUCRjajH4zFKHHdPUU1zbG9rT0NuaXZlaW1GdEJxU2lpSWRPQT1aHiIcQVQ2NlNwaDZRTGEzVDQwOTZXUzVQMStsMXZBPWXJWWAFEsMBCAISvgEKHFljU1RvbnZFU1B3cUNzNEwyY3JWaHY2OEw5OD0SZlo6QURxdEFaeU45VXEyQWFBRGVWTi9DUjVlcS9GUWtBV2x5RUtWNHZKZktBZk01Wk55a2tTeG1KSERlMGxwYm1kS3lnaVhpWERqZTQ1eDlFSGpHVFU0M0I0SHI4SlB5V21NN0E9PRgAIAAoADCL1PvxgqaGAzgAQABKHG9QVmtod0JSYlY2NUtDV1IyK0lPTkhXb091OD1aAGUAAAAAEuwBCC0S5wEKHHorcmhtcXRxVXV2K2ZUd1pEMTAzOHByVWlSTT0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdVJhSmxFSXhCUXI2eGtqRnNTcmtKOGx5VzBBNysyRUxwUVkxek1HSzV6UzZoeU4ycEdDbGpvMEs0WFQ3bG5FQ3FoWWpmS3c9PRgAIAAoADCFjM2C59WHAzign43s7DFAoJ+N7OwxShxUWEtFTUdEYUhJSXVCVW9zbzJoSmk4WU5LdEU9Wh8iHf5obU9HWFpSYWxvQno5Vkl0RDhHUENrY1VVRlU9ZSjoN64S7AEIOxLnAQocVVNjZFVsa1JQM1hJL0lHK0pGNFI2WFJSVXkwPRJmWjpBRHF0QVp4QU1veFBtblF6Z29BaXgwZ2U1d3F1aVROaHllc1FqcGJpSGgwcnJrRHN5M2JjeDhuVXMxSmU4OEFoU3djL1FyNmlyK28xdmVYd0k2OVcyVWxUUEhXZ3V2dU9JQT09GAAgACgAML2ux5368YQDON3NgcrjMUDdzYHK4zFKHE9WNm04SFpxcndWOVorTUl3SlhlQjdmdmJjND1aHyId9ytSaDdHVnVYNkpWMEYyMnRJSWw5SW1vQ0FCaz1lo60cXxLsAQg2EucBChxNdmtHQStGNitTajE3ZC83Zk5sYnhNRERod0E9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXV5cVBDZWVwTEd3SWNuTGl6UVNqNm1xa29oUFQ2c0ZlNVp1Tm9QbjgwQ1VWazVadCtLSGVIUjJQTXc0Z0tqRi9COHpDZnFnPT0YACAAKAAwpteWlfrxhAM4ucSAyuMxQLnEgMrjMUocRVZtQitLa1V5aXE5d0paM2Z4U3JkYlU4OVk4PVofIh3cM2lrMzdoRVlXemYvaXhVWThMNExHZWR4dXp3PWUAAAAAEu0BCCUS6AEKHGdEQ2NZU1FQSGxiY1V5bjh4ME52MnU4YklhOD0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdW9jR1JMcWJQdHNzWkxXTzM1TkttTW1rc1l0QlFMWkJFajRYaGdpR0VUdzhpVmh0Si9QUGlxaWVjVlVWYXZzR2tSa1lKcmc9PRgAIAAoADCKuaPtksCEAziNtvuZ3TFAjbb7md0xShxZNUgvNEJhbzBtVURoN0cyQTlVKzNXYU5jdmc9WiAiHv+7dFZCYmpGSVpVWG5MWWVUTTRNVi9pWFVUNHVrPWUAAAAAEu0BCDAS6AEKHFNxUTNVNWYrMTVPNnRid1NaTm9iRHViTVZhQT0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdUZJOFNybzFIUE1DMk1YQzFLdkxmUFc3UW84MFFZajd6VXBkS2swc2c0Qnp3dGs4L3N3dnZtV0tIMXJ0UFF5TGVaYkZMZXc9PRgAIAAoADCE0Lv+zvGEAzjpjr3E4zFA6Y69xOMxShxFYUJIbTVVZE5Od0NvMzNJVXpYV011NFl6S2s9WiAiHv/dVGk0YlNYOUlVR0t4anU4QWc1Szgvcm5rUjVrPWUAAAAAEusBCDcS5gEKHHZLd3pPUnBwc1l0TkI4dmlFdk5tNWFRSm9qND0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdS9aNjZTeGx0RnplWlZaK2Q1bjR4UVNCLzZyRzl0ZE9IZG5yQ0Z5aWZ0NEdKQm1TazR2QXlQaE9mVUhKQWxKMzFhZW1xakE9PRgAIAAoADDnqvmt+vGEAzi0s6fH4zFAtLOnx+MxShxxb2JqVjZGSGg2eC9qVkxwV1ZybndSVWYwQUU9Wh4iHGcyOENYdW1PS25pK2UrQWxIciszMFp0Y1N0WT1lAAAAABLrAQgxEuYBChw4UjIrTlNBU0VPTzcxOVlBU3A1c2owa1hIWFU9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXVoOXZGRHpJR0lNWVd3SjBnV213NEhNdWhQckxGTkdTUXFWUjB5c1MwWkRJajRKcUdSWG5lcFdKKzRhd2ZBRTVjd2lDSytnPT0YACAAKAAw+5OXiM/xhAM4ga6+xOMxQIGuvsTjMUocU1h5UnNXUXoxUkUwelhqVFBSc1pRS1g3OEVRPVoeIhxOR2Q5L2lidVlLWis1d1YxTWMvQlZCOE5vc1U9ZaOtHF8S7AEIKxLnAQocbjZXQW1EVUtuc0xiZW5ScUppVmJidGpzV2Y4PRJmWjpBRHF0QVp4QU1veFBtblF6Z29BaXgwZ2U1d3F1NFNxbW85Z1gzYjNNYmxoeC9BNHkxOUVVd1lJU2lEdHV6cGVVS0FxejlTb25OZHR6K3AvMnNLbTFCMVpqK09RelhiTmczQT09GAAgACgAMNP0n/OE+YQDOLq9iL7kMUC6vYi+5DFKHFN1cHkzUlpNcUNsZUZKMWhxL3AyUWxiYnJZdz1aHyId+25tTnpsV0RwckE1TzB0VGhnSmJLc1p2MkdYUT1lFx3RKRLrAQg0EuYBChx3emkwa2c1cXZEMmplUkJiWXN5dmFzdTdWdTg9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXVvRUozYSszbE41RzVpWHNVaFhIb1RNdlRwK0U0b2pIWTVWZUtvUS9YNGJ2UGxJeWZjUEh4elRCUlhyS0FmaUJzR1VhZVhnPT0YACAAKAAw676Z44HyhAM4zK78yuMxQMyu/MrjMUocS1Z6aGxva3JFeVJpWlpQUFBZdzFySHJpQlRRPVoeIhxhQ3pycXh0MmxTc05CL2ZyRVFHaVE2UnVBNTg9ZZ4kwjoS6wEIJhLmAQocWW9yZjF0Qm03MXRtU1lydUNjUU50ZUV6UHRZPRJmWjpBRHF0QVp4QU1veFBtblF6Z29BaXgwZ2U1d3F1Tlhjd21ta2pSRUp5MzBCeFg4alIvMUNFWnhMeFp4bGd5V0xZTzBRNFg3ZE1vNFZKVzRKRnR4TTc5L2xJcEhmTUdiWXlBQT09GAAgACgAMMS1uu+SwIQDOOjrno3TMUDo656N0zFKHDRFais2TU41MEdtNVpJVEYreHdTRXZRWDBxaz1aHiIccTcxQU1WMm9jSm9UMm5iUkwwOS9NOWZIa3ZFPWXQpSZ8EuwBCBMS5wEKHDJiaEIyeCsxenIyeU1tQTdLTkZGZW1TMFg2ST0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdWc2c3c2UDJESGI5cTJYYkV4bmo0T2thWTl0UjNvcURZZnE4MWkvU3NmTG01UGIxNEtRajJvVW90VnpCRitjRFRSOHkwWmc9PRgAIAAoADCr1LWSoseFAziOu+G/7jFAjrvhv+4xShxpSzRMaWtOTWF1VElrZndFa2thQy9jeE1UWWs9Wh8iHfVFUno2TWpYdUdKVkZFOGd1c1pER3g2a0k3N289ZZ4kwjoS6wEIBRLmAQocbXRNekNXWEcrL2hiQ0ZXUWtWbmY0SE40d1U0PRJmWjpBRHF0QVp4QU1veFBtblF6Z29BaXgwZ2U1d3F1SmxRNGpSaFFacVhYWHJOd3Z1V2I5aXoyNkthSFQ4SUx2dWNrakU0MjZ1Z1N1WnRJbytqUDNleStPN0dTejk0SDVUNldmZz09GAAgACgAMKmB1YXe/oIDOJX9i7nEMUCV/Yu5xDFKHDJmYUZDcCtKdW5zd3FzcFMxdmR2OHd0STl1dz1aHiIcVHVnS3p4WHljMlArYUJOS0JjeDFWeGIvMXY4PWUAAAAAEu0BCEES6AEKHEhQTHk4UURHa3ZZSEZ5YUNWdWdVZzFiUHFzTT0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdWkrT1BVUFh1VEVvWmVVOGNKdXoyeHhzUzBvd1A5ekNGeGQ0aDJ2SXk1RkxKNGJNNko4Wmk3L3JhYktoVGpRR1B4S2xvZXc9PRgAIAAoADC86Ny2wsmHAziczvvGjzJAnM77xo8yShxaKzN1b1pMUjlJTDRuck85UDNCcUNwVjFZL0U9WiAiHv/9YkFtMCtkWnREWkxLSk5SNDRlanlJdnU5enFZPWXACu1YEuwBCC8S5wEKHENFV2RCdmYwWk9VUzBOWlB4U1B0ck1HT1BVWT0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdVV6MkwwOWU4RlpHek1YQzNyK3hPcFhUeERSRnZkWnVXRFluNnR2eFlUS0V3VXhhLzN5bHcvOGhMN1lib1VsdThSWmVIemc9PRgAIAAoADCy2PT36LSHAziererzjDJAnq3q84wyShxPYmpXVTY1NTMya3FLbmhYdTVZSVVzSW9BSkE9Wh8iHf9NZmZ4REZiNi9NRGNWeGpYK2FpYnZGL00xNDQ9ZcClKLoS7AEIHhLnAQocNHBPUEs2T290Z0lYSEhKKy9iM00wN0JoTGFJPRJmWjpBRHF0QVp4QU1veFBtblF6Z29BaXgwZ2U1d3F1RnV3eFk2VzVibW5NT09maWo1R1A3bVp1VlR5UWRJcUkzMkVTVnoybTJzQzhXVFpPd3pSQUNTWGFQRmpPTVVQMUhWM3lUZz09GAAgACgAMOa/qP33vIUDOLqOw5btMUC6jsOW7TFKHFNOUTNLQW5ldnpLb0xVemJMSWNYS2JjbHlTVT1aHyId+zh6ZUFEbUp4TXlrUFBBWnhRWHVGSUUrdGtxYz1luW6B5xLrAQggEuYBChxqY1Uvd3dKQkFLSE1kQ0RsQjBzVUJSK0YwdDg9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXVDOVRoVEVJR3YxSjBBaGdQekFOZ0lZVGxXdHBYR0tyTGtoOXJIMmtqc2ZZMzROYmpUYXVpNld2R2Z2N2RBYUtWemNMY0pBPT0YACAAKAAwkJjC/Y2chAM4roTBy9gxQK6EwcvYMUocd01BTGxYVDVJcW5SSjJCZFlvVDlIRzdZSTNVPVoeIhx0NlRVRWIrMEJEK3BrWHJTem04UllOZTNSYU09ZcuI/9kS7AEIJxLnAQocblJWek9rUE5SdG9GYW5KNEZIZG5ESmQxZGowPRJmWjpBRHF0QVp4QU1veFBtblF6Z29BaXgwZ2U1d3F1WDhNWWEwdjFaTVdGOHhEMHREUkJCMmE2YjFtTlZPemQ5OFJDL3A0aTZQdWFHY2FTU1JydzYxQ2IxTkNmOExxQ0tOTXlqUT09GAAgACgAMIuN3uSW/oQDOKPi/JndMUCj4vyZ3TFKHEFWZEs3Uzd4T1dnSXBqdlZCL0tCQlgvR0tpbz1aHyIduGMzYWVFeUdzVzFoQ2E0ZjBnN0lZZnphNlo4az1lgs5AUhLsAQhEEucBChx5QjhxTjNoSzdod0xrdCt6c0hMOTdCdEhVK0k9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXVIN25QRXZUd3RHS0Q5YTZtcTJoVEZQanp1WmtqL0tEbXFEckJ2S3pCZmRLZnFQVkJkUVYzajBzMUdxU01NQ0VjeGhyU0V3PT0YACABKAEw4NL3lpzkiAM4m73LraMyQJu9y62jMkocNklISG9TUGhPMjZTMDQ2TkhybEc3dStNQVRZPVofIh2xNy82Y1grQW8rS2pFTVFFWUIvenluS3hqNmVZPWUAAAAAEuwBCCQS5wEKHEt4RW5mT0VWWlVxSUFzNS9Ia0NwUm11bXdMVT0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdWpURFpVUk8xdk50QjJ3bkNGTlY0UFpqLzBWbDZSb0tOWlA0STFSeThpSDBneS9KVnp0UExtY2Y3cHM4elhzNzU1clhWQ1E9PRgAIAAoADCPu+WzwvOGAzj/lPjFhDJA/5T4xYQyShxrbHBzNGdNbGwzV0NwUmZxS2M5NVNEUHBaODg9Wh8iHftDOUdmVk1VM0d0dzh1TXlvNXN4UE93MVovc2M9Zaqx9fMS7AEILBLnAQocd2k4U0ZJelJnb21nTWMrUXlsWElWaWtmR3MwPRJmWjpBRHF0QVp4QU1veFBtblF6Z29BaXgwZ2U1d3F1aDlhT0dkZ2VJdDR0MWlhSXNiZlhVOGFNM3pWV3kxS1FKLzlJV0xnUCtNb2hSMHRyYTJBcFUrYU00QitQb21yMEowVVNPQT09GAAgACgAMLq6sYDa3oUDOOHapbnlMUDh2qW55TFKHCtsMWlCTDkzRDg0MUFMMnFyWDRDRlJScHF4az1aHyId/TZHSXNOSmRhanE1dVd0SjRNZHlzWTBIaTNvbz1l4bQleRLsAQg6EucBChxQaEllZkVLNWEyaU5RajBLZHpQQm5JZ1RERVU9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXVmVitpVFNwMGNpb0pzMnplWGtlYmtJK0k3d29JMnRRL1BxUmR3OHhiS0g4M1R4Qkw1U1RVUzFVTG5relZnNWx6N2xIREZBPT0YACAAKAAwoqWemPrxhAM40/aAyuMxQNP2gMrjMUocZDFQSGJpa0gxTXUzMFNpaDhnanN5enFuMTE4PVofIh3udzhxWFMyRHkvdXB2WURnUlVCcWdyeUFJNENzPWUAAAAAEuwBCAoS5wEKHExzbFFYbTNWbmk0d1dRK0RBaXA0UXFPejl0bz0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdVlrd3d0VE5XMytKNXlkSy82ZEVGV2xxeXM2UmJJeTRsY3ZxcXMxWTl4Umd3TzBEQTY0YUNwdE40VjdyRVB5Nng5Z09rQnc9PRgAIAEoATCtgv6i6uOIAzi2uPDMgzJA1fCZp6MyShxHVHREOTNoODRldW1XZGhvbHhSdEVudzVDNXM9Wh8iHfdHVUp6d0h2WWk0SUF5SngvdFZZRU1OOXhsMmc9ZXwtVIAS7AEIKhLnAQocQXc4ZnlnVFRYd2FGK1JPRVF4dnhjbDNJY01RPRJmWjpBRHF0QVp4QU1veFBtblF6Z29BaXgwZ2U1d3F1RW5xb1lwR2FNQTUxK3YyNHVabi9DdEVON09SUzVtV1M1elh1OHdMOHlMOFpvU20zUTlCR1RHZ0JTNGxucWcvcGg2b3FzZz09GAAgACgAMMPDmLaTwIQDOKrhhJrdMUCq4YSa3TFKHGNjSEZSekE5ai9iM1k5Z0s4c2NNdXhoeXZ5ST1aHyId91JmcE9FRDJtVzY1WXdKdDZseUZDcE0rb3hZMD1lqIgUXxLsAQgdEucBChxrZGtxWHFkTlkxbHFWWUVMYThjSDNKRGpnVTA9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXVUUFM0b2tmYkdMU0JIZXg3VWU2Y2ExdW1ZdUVCRWZOakp6ZE9hbmJBY0pUdmlQc1JMbWxNcG04RkQvbzAwOWlOeGIxTVBBPT0YACAAKAAw7MiJ8IOhhQM4+bySmNMxQPm8kpjTMUocVGlRS1B4eVVPTU5RR0lnN0p1M0hTLzVFMUlNPVofIh32dkdEMXBoN0hGRzV4REJ1dGxIanNPWm1PQWVFPWXAK/TwEusBCBcS5gEKHC9LOFdYUVUxK2g0US9aNDlkSzBXajV4WklFUT0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdXg4a3JVSk5lYnRNWU1GeHZIQXh4VFRNald3Z0VlaW5XQnk0UXdPbUIvN3V6QlhVUWQxSWY5Z3hWQTZkd3lTMEEwN3A5Wmc9PRgAIAAoADDxuu7r0+mDAziV/Yu5xDFAlf2LucQxShwvMEhIUC9ORlJCdlRaWVF1WllDeWNidVhBeUE9Wh4iHG1yc1FsdmVTTDRQZnNsT01BcGw5VjBCYk9Xbz1ldXXEUxLtAQhAEugBChxBUzhkMkxZOW9QTGVSekZieG43QTRJMitLY0E9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXVVcVh0U1liVmJQb3NrM0JGYWtoa1BwQUErVTc4SURqNzJIOEhzUkFHbnZFMjZleVhuVFVqbzBsYkVUWjkrMjlzdDY3V2NBPT0YACAAKAAw3MOf6cPzhgM4lrGPxoQyQJaxj8aEMkocVWZnaTlFRDdqaFRndGg1VlhmdWNpNzU3Q2M4PVogIh7/+0pPNlV2N1Z2OVpqVFRhZUFLMUhxZnprL3dhdz1lwArtWBLsAQgbEucBChxSUWRTMjVURzAyQXVqM1F0ZEpxMkJrTEJzb3c9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXViTGs5VllaNWM2bjZuL1p6N0pmMFdheGQvSStNZnhQUFpCY1ZUeWJVaWtkcG9lNjI0OU1BOEExRFc5WWJ0ZVVud3ZOdFdBPT0YACAAKAAw17XCzu7xgwM47uevl9MxQO7nr5fTMUocb2tacWF3TGFId1pLVWhBNUtmQ0FuTElXejVZPVofIh3/Q1BxUXdHSWEwVGhXSUQ0cncycWUvZU9RSG9BPWUAAAAAEuwBCBAS5wEKHHFZTGNDNk1PQlJxSUFHdzZiVElTdWtCZjlDYz0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdVBGNjVGU0F3L3dtTFNzM3ZKcFlNeXpZS21WVmNVd0xEeS9abkJXb1JQengrRVk4SThJQ1BOcGQzdVRBVjRQZWREazFZOWc9PRgAIAAoADCbxJ7S9eWDAziljtXT0TFApY7V09ExShxNaTNIKzZ4bFpFdHhPSGhiVndHTXAwMjEyUEk9Wh8iHahPRGpFNjFPYU0zTldmZldHT3NnWjN5Q2lDb0E9ZYLOQFIS7AEIIhLnAQocM08wVmhUZHZuNXIzL3RsSUVpQWJyYkRHVjBvPRJmWjpBRHF0QVp4QU1veFBtblF6Z29BaXgwZ2U1d3F1eERmaFd1Z0pWcmxrdFBxbDVTQUZyc3lwdWtpbjQ0Zk9yd2JwTjlTaWdSWUw4bnNxcFRNQndIZnlYc0NIUFR4TzE5TnY3QT09GAAgACgAMPPU6Zej4IQDOIvwq6jhMUCL8Kuo4TFKHGVTNXJGZVE1ZkNWNmpZeFoxVmRyeVZjN2dHYz1aHyId7lNlS3dzdE1xdHJlQW1mM0FXU083ZFQ5aVMwcz1lqrH18xLrAQg+EuYBChw0TGZnYWQ2TzZkMHV1RzQwMXRrQmhjMkZjMnM9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXVtMlNJcHBYajRrZ2xyOXYrU1hqcjZReTF2dXUyMFU5QnJJMkdxVkNVZHVEOXk2b0kxN3d5MUVKVHpnVTQ1Z0FUQVVqZGZ3PT0YACACKAIwrYL+ourjiAM45//VjuUxQNXwmaejMkocaUxzekZHcWE1SlB4UmdMTmZmRG43bG5wYi9nPVoeIhxKcTFsS1RlT3lHQXFiZmttZ2ZqUVBlc0FyVkU9ZXwtVIAS6wEIBhLmAQocY3lMekVNTFJwcEc2azNweWZYYUp1dCs4WkxZPRJmWjpBRHF0QVp4QU1veFBtblF6Z29BaXgwZ2U1d3F1T2tEdEZ6aHAzTFhCVlQ5WEVDSDg3bEMrODM2WWZlYnhOQkI0aHduRXRMTDVYTWNwZDJ5cmJIbVE4OTBMU0FucTBvaHQ5QT09GAAgACgAMMXs1rjl1YcDOJX9i7nEMUCV/Yu5xDFKHDhUaS8raWM5TFh5QzM0akJ5QnpwUW9VN2JrMD1aHiIcKzNBSk5iaEJ4SGZzZk5NUGFiREl5NVBuWSs4PWU2c4oBEusBCBYS5gEKHGRzT1JwSlJUVGJtSnFieWt5WmlCekJSUGJodz0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdXRQaUIyWDY5bjQvNHpsNmFadzgxK2N3alhhSFB2aWxQZGIxQWxVWHA4UU1nS3pVOTJQd00rd0tpSGh3TVdFb0F0VzJZOGc9PRgAIAAoADCUpPnn0+mDAzjSve+Q0jFA0r3vkNIxShx6TVg0dDY2UVBDTTVzcW1LNmZPMXFPMjhYMHM9Wh4iHFBadFI1eGRVbGR6NWRENC9PTTd3NC9ZbWJJMD1lYWchNBLsAQgaEucBChxCZGlOVCtoamVQMDl1R0IzKzBQZExHV01uTTA9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXVQY3gzMUoyQkZTd1U4QWZiajFoWmdHNWl0NC93MWZIeEtIanljL2NiRjJTallCTlhoSHQ1clJRaEtmNmE0MnU2UG13QXpnPT0YACAAKAAw55XU+tX0gwM4naOvxdMxQJ2jr8XTMUocVGlUYzRHUGpBRUJTZEE2TEpBRFhWOC84RGp3PVofIh3tTmZzM0p4b1FtMHhhNUdUR0hpZFVOcUhER3VZPWUwS9qmEuwBCDMS5wEKHDFCT1ZDc2xvNTlxajZRUjVsNUszS0dOUFRyST0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdW1Yc3RZVTd0R0FVeW5KTi9WOTQ2YWlPeGVoMWxpN0xuNkxKMlYyY1huemhpRjlWdFNsWkpaQUdER1VMM2lHMTUrcUVobVE9PRgAIAAoADCV9I3ggfKEAzia6PzK4zFAmuj8yuMxShxBYzUyQmZLWnNRQzJiWllKWTg3VVM0Q2JWU1k9Wh8iHdtTUDRWdFNvTDhDWlNmcFZ2YTJUYjJudlNOOEU9ZQAAAAAS6wEINRLmAQocVGd2dkkxSmJzbS9PcUF2ZVdoWEgrdEYwemJzPRJmWjpBRHF0QVp4QU1veFBtblF6Z29BaXgwZ2U1d3F1ak84Zmd6dlB4WURvekUwYWh1MnpXTXdTUDdJUGg5V05kclp5VDl2c3FhNGVTb3JUaUpwaGhnRHMzU1RCNGN3VnZNb2hKUT09GAAgACgAMIeQ1+WB8oQDOJLYhMrjMUCS2ITK4zFKHDF1WGJWRzhLaVQxVGtTUUs4RVpiRG1JQ28zcz1aHiIcd05PM1JXZ3BxczA1NWc3d3d2TXhRZC9KeTljPWUnm1oxEuwBCBkS5wEKHGtUSmE1TThsL1lHcHdnbnloMFJrZGNGVzVBQT0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdXdYS2xqUlV0QStZUXlBcWl2UWdXUHI4aHQ2ZjhNcldUVFNHMjBmR3FjVG0xZzloY1l0dTlZdlpFdDNwa3c5U0F6enRZMGc9PRgAIAAoADCW76/UpMyHAziV/Yu5xDFAlf2LucQxShwvbXlSTWpqZzJESG1VRUZ0d3Q2MnAzazlDWWs9Wh8iHdt6MHFWSGU5bzRYbjR1M1ozTDMxekFJWENsQmc9ZfGts6wS7AEIIxLnAQocWnlud2R1R0NsNDFnTkZ2SFRKTXhPdlRzVnlBPRJmWjpBRHF0QVp4QU1veFBtblF6Z29BaXgwZ2U1d3F1VHpxdnNtZTlyd1pyRFNzNDF6cEY2Qi9tZk15aFNXa0hDZVhMWGNpenI2OEt5R0NyOEpoM2FYLzVSNUFGUldWZGtLU3BoQT09GAAgACgAMNrK0oyQxYUDOLrA15zuMUC6wNec7jFKHHF0Tm1TZS9RV00zV0h4UEJzbG9Ubm5ncGVLQT1aHyId9zVwSlhBeEtaU2x3MkN6b1lybC9sWTJqYUxaWT1lqrH18xLtAQg9EugBChwxUmRtSFhPNEt1UE9oTzhFa2t4L0VJMHRDSFU9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXU3WUttVEVpSk52cVErMUgrSHVsRTNJeC92OHE3SXJQbW4vTnBacUpYTDdiSWhkc01PT3dEZTFFTGhma3krakNsaGJlN25BPT0YACAAKAAw3pKLt/r9hAM4wdnSjuUxQMHZ0o7lMUocN2RNM1hJNVVkWTVaWC9nWGkwaXYwRFNWTy9rPVogIh7/7kh5QnZLNkRyNyt3cmRpNnd3SWEvSkVCYzVyaz1lAAAAABLsAQgVEucBChxySGNaSXNOQTREUW1MUG9GUkNHMDF3Nlk4NVk9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXVlelhvNWpERlBxRmJWakFhS29QYkpjMVZoZHdYOC9tZHhKQXp4NFpEQVhGT1ZsTEp6UFEvc0N2dG9uMmFMMXNHTVRHNWV3PT0YACAAKAAw5OqP5tPpgwM445/vkNIxQOOf75DSMUocb0lhcVk3VlBzMUNZVkVmWWxCU3g5eEpKbVFRPVofIh3+RmE0cXBKSHpJUUluc1RDaUpZbHFvWHYwamFFPWUAAAAAEusBCEIS5gEKHEdySlBwb2x2OW9qaytmWmswNDl2em9LdXg1VT0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdWVMcUF3Q1hqWlk1cFlYS043Yjd2SCs2amlpVVBCazJlb0hGQndpdWhJNHNBWStMcTQ2ZWwvL0J2M3FvYlFveHdid2pPNlE9PRgAIAAoADCyptuMrv6EAzjBnqGV5TFAwZ6hleUxShxJSmdRaEFaVFJNOVB1dUZMQ1FKanFKb1FPdHc9Wh4iHGIzNFRZWndnckd6Q1l0UnRVWUsyQnBxYTdEWT1l0KUmfBLsAQgOEucBChxlUi9PaGdENEU2VWltRVM4ZmZVK043Q0dBaDg9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXU2Z25ReHkxNlUyQitnSDJGaTZzWmdQY25lSzgxVGI3cUdieG1Fb1hxWUNrVmxZRjI3WWhwT254VlduMWpGbnNMcVhOSVRnPT0YACAAKAAwjsr7nb7igwM4tPG1m9ExQLTxtZvRMUocYlBOenE4alcycUdodWZEVXJOM29lUUROMFo4PVofIh37UktpYkcvUmF3aDBXeVgzWCtsMkVUMlgxYVg4PWUAAAAAEusBCDkS5gEKHGNKamZhenlCWldUdEs0bzY5TXE5VWUrZlM5VT0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdXhOUWlMZ2J6MWRVcitvMlhaYkJHb2pDYkJzS2xrNzlBLy90aTlXRUtrTytxL0tTQUFkM2hHRGg2ZEFwSDljNHYyZ0doNUE9PRgAIAAoADD91IrF8fGEAziAm/PI4zFAgJvzyOMxShxPeDVsdVU3ZVBGVFJEVHhSeUZzL0hsSkJRUjg9Wh4iHFZ5Z2FHWTdxNXFFNGhJZE9YMGJaYW1icXV1ND1lYO6tHBLsAQgUEucBChxNVFNLSi8vc2daUG0yQ2UyVldWd0w2cm9vZlk9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXVwZkErcTVWRXpEY2puWnQ5Mm1kZlVPRVJITTFYUFZubkE5elVXc3duVTlYaEFoVmU1NDB4OXdqa09LSE1naHZvUG5qa2NnPT0YACAAKAAwq6PWkuLJhQM4yPPb6O4xQMjz2+juMUocaTlOYXE4RDlsYStQa3FKazN3QmV5cG5CNmdzPVofIh36UWc5N0ZVVmNmY3doOWZBVlhYeHFnMkt6T0s4PWWeJMI6EusBCAwS5gEKHEVIL3N0a0o3elQ3bFVVRWlSc0cyODlINHlTRT0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdUxreHRYUE9JMjR5RlhQcEdPZWs1NjR1aW0vRHFXbk5EUlE0Y2pybkRsbWpQYWFEZVkvVjNzdVM3TTNpRmZRa1l0NERQZnc9PRgAIAAoADDTzrvz0YODAzjo17qJxTFA6Ne6icUxShw3Zm8xc3FsSENlQkVzb0x0WXY1c2ZVZURGL2c9Wh4iHE02Ulp5U1pUTHJTcnorcG1RZDBhUys3Y1h3QT1ldXXEUxLsAQgSEucBChwwOHVnMDNucFRmMmIreDV3YjZLeWJ0K1d2Q0k9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXVvUlhhMlY5RjRraVFJZzBjR0UrRDB1VlZKdmRWSFVYQ2J5aUNXZmEvQU5vSWdQbTc1dUZmdndKUEh0aDA1TmZncHBndGRRPT0YACAAKAAw8af578jxgwM4yb/FktMxQMm/xZLTMUocYUFtK1dLbXJzMytmSmYvbzNYQmljc29WMXM0PVofIh3qbm4xREdtV3RZNnhjSnNXczhkUW1TQk1BUXdVPWXApSi6EsMBCAMSvgEKHG5qZ0R1ODhlQ3J2WHA4NnBEN2ZIR2NxRnA4OD0SZlo6QURxdEFadzdCemxhVnl5M01zZ3lvb2VvU2NCZkFUUU85aVUvKzFtOXo3cHlBb0szdG1jTURPbXZNZjNGSlZXaWJTczhHUnl6Q2F6czZqNGVTKzFDeGE0Q2dPaUFKemhlQVE9PRgAIAAoADCL1PvxgqaGAzgAQABKHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAEuwBCAkS5wEKHFA3Q1NTRnVYcStOSXdCR2NQWkQxSDY5RGRCaz0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdUE1VlFqeTM3Z3ZTTi9Zdlp0S1p0L1AxSzNmM3JNckJmbm5KUHhiUEc1L2xPcDh6Mi9HZWdQOWloQ0FsUHViK0RBUzNWZlE9PRgAIAAoADClq7LJ6uuGAzifiYHIgzJAn4mByIMyShx4b0ZjRnZZTk9jTkxMNUEyMS9UanlzQXp3TWM9Wh8iHe5RV0Q5NDkvYlBBZk1FZUx3aER5R21KVDRJZXM9ZXV1xFMS7AEIDRLnAQocMitneE01MCtYUkxETmtweUFLYnBNV3FuRC9FPRJmWjpBRHF0QVp4QU1veFBtblF6Z29BaXgwZ2U1d3F1MENpdUVWYzl6cC85eTlsUlY3ZitWT29lQU9tdER1dC8rT3kvTDB2UldHckM4K0JXc1hEUktKK3dWWkZPS3daQkw2Y3RQQT09GAAgACgAMLflkK3Ug4MDOJ3q4onFMUCd6uKJxTFKHFhlQnc5Q3g2WkE0R1g1WXdpYk5XZTlUZXZJST1aHyIdpkthNWovVkxZZ0dCRjgxdGx6KzRXR0VUL1lsRT1ldXXEUxLsAQg8EucBChxVM3FqaCtkdVRSOGsrYnlZKzNTdlRDWU15T1E9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXV4OExRZ2J6ajh2aERmSzJkY3lUZ2x0TUk5azcrcGJKQldvcnppVkUvTGM4bUpKVmRMeDBiaVo1T2tuOWNncjNwano3azZ3PT0YACAAKAAwj5jSoPrxhAM4ooCCyuMxQKKAgsrjMUocbGs5Q1pGR1BzeWVwYnkzaDVpVWQ1b3BtU05ZPVofIh37Tkl6a3RqNDNybGNqRWdHQnVkbEN2b01YQmtNPWUAAAAAEuwBCDIS5wEKHDhhYVMvWlNsN2dDT0k5MHczSFp4cE5YOWFucz0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdWdXaVRQVFFVTFdIbWs3WEhTNklwOXNqM1NweEt5TXY4emVmWGRJWmlBRlQ4QW8zRDNyaWx4aHlHWXhadkV3K2JZNVcrcnc9PRgAIAAoADCVicKS+vGEAzjRmIDK4zFA0ZiAyuMxShx1Q1dhWTRJUXMvOEpIS1E5TmZJcjRWNWJXZ1k9Wh8iHblRbjNFalFmZHhUMzVVRVJxMTljS2I2L1FaeGM9ZQAAAAAS7AEIERLnAQocOFNpWDgxZmRvUmhFRmFQNkRIOEFhUHd5dTdFPRJmWjpBRHF0QVp4QU1veFBtblF6Z29BaXgwZ2U1d3F1bFIvTzRxMFJBajZCYlBsSlFwYWoyK0RiTE44UkVPTllGZlAvMDhsR0FtNkhMT1dOVklvamUxelZBNTdWNzlzQ2RJL0VRdz09GAAgACgAML3f1fay6oMDOKbshZ3SMUCm7IWd0jFKHG1zZzl1d2NmUnV2citkSWVjbllScUYvd01tdz1aHyId1FVmWG1oSDV4dGl4UzNYc3VhVW1vZFR3R2VDaz1ldXXEUxLsAQguEucBChxsV29tTzdrUnlNa0dNNFNFVjFmSXJSRGd0Z1E9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXVoSGFMR205Y3VneGI5SjBpellsRm53YTh2QzJ2T25SbVQ3cUpoa3o2cGF3UUJxbGtLclR0YUFrUGpzQzRPREVhaldrMFBRPT0YACAAKAAw2J3Es/m8hQM4mNfZlu0xQJjX2ZbtMUocWEFOOXErVWlxZGxzaG9EejhGOWdaNzU4OUowPVofIh3/K0pNRVNmcUVzV1dFSW1kVnlGZWc2ejY2azI0PWV1dcRTEuwBCB8S5wEKHE5JZWlSYmtZTS9KekQyd09uaE1BSGNqQTl3ND0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdXY3Q2NOM0lUWEdaZ0dHekM2a2ZUTU9WdXM4TjVDSGlQN0FBM1NLeUt3RDJIcEEvdFdFWDBvZXpxT0ZHSlJsZjFxbU96dnc9PRgAIAAoADCz+oznjZyEAzi+n7/L2DFAvp+/y9gxShwwV0hxZHROL3RDQUV2WWFuR0ttdTlVcGV2SDA9Wh8iHf92K3dOOFpRSHJTeVVFMjlFTFlGVnNGQk5BaUU9ZQAAAAAS6wEIBxLmAQocakNYeEI5N2wzN3kraVkzbEpjN1B1bG5ucmQwPRJmWjpBRHF0QVp4QU1veFBtblF6Z29BaXgwZ2U1d3F1ajVRaTdNclBtRnJWa3QvUkJNRnRCNGlQaUJDZG1lMUFsRFdYemNhenVLU1dyRGtYRmN1Umx1SGplUW5mMVF5bVpmVlRHUT09GAAgACgAMJG59qDzj4UDOJX9i7nEMUCV/Yu5xDFKHEY4ditNUTV2SlRrOWZlYzRXc0M0cExiSEhZbz1aHiIcckZhNVpuSzRnRVZnME9MWHZMNG0zcVpxd0ZZPWX6kd7bEuwBCCkS5wEKHG03LzkyQTVHdUFvYXFXNUJsUUI4VjU1Vzg0Yz0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdTJHV3lhcDRyejd5NUpoZ1o3YzdwR3YxVmo1Qkt4WFJwdm4wcHQ1dG1yVVc2UjlNdFgxbkhiWmYrZTVBbnNVak5UZnNBelE9PRgAIAAoADDkxOWdk8CEAziQ2oGa3TFAkNqBmt0xShxQZGdBSWU5aThDR0JwY09WZzNTR1VheDEyUWM9Wh8iHe43YytScUdWNUZaWSt2VDV0b3YxcGdYV3UxMWs9ZTBL2qYS7AEIGBLnAQocM0ZLU0JteGFkbXFBNDZKUExqQXBZZkNiRzhrPRJmWjpBRHF0QVp4QU1veFBtblF6Z29BaXgwZ2U1d3F1U0FjYk1iWk1yWDZxQk9JVzBzU2M3TGJXL1lESDVaMzJFUDNsdTBScGZXK0w1MmJTOVRyR0JacEpUR09XRDNWS2VlRVRUdz09GAAgACgAMMXs1rjl1YcDOJX9i7nEMUCV/Yu5xDFKHERXaERoY0ZMc3Z3VHVLMEh5UU1xa3ZNcFRuZz1aHyIdtkpmQ0svNDZEV09XYlB3c3JTUExCWURhR1FZRT1lNnOKARLtAQg/EugBChxsNnhaMVIxSFhzM0MrTXNxb2JPbUZ4Y0FaMVE9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXU0bE8zWmZHQjdsLzBRUG1UN2dNRkFaUEFrMjhDUzNxWUhoYnBpWXNMZGp1d3dkeDhFWmV6VnpROTdxYWJMWW9OWm9yYmVnPT0YACAAKAAwkvnK+5yDhgM4wrGKku0xQMKxipLtMUocWVdSYllBZWc1OVpETVZuNDlHQTQzQ251elNBPVogIh7/91FpQ1gyVVdIdnorVnA4dTV4dnphTHFCRVlVWT1luW6B5xLrAQgPEuYBChwzSzdXWTFWS1pDMHZyUnZkeU1BZDhWYjgwNnM9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXV2VmY2VHNqeGxvM0ExNTU4VUs1S0gwc0s0RzdWVTMyMW9LZ3ZuVFhhdFVjU2EyaVBENXhVek9Delh0c3hBQ2syOTBxMDZBPT0YACAAKAAwr7+51/XlgwM4voS2m9ExQL6EtpvRMUocV0o1NzlNOEJ2MDJQVzczTTFhK3ZnL0oxQ2tjPVoeIhxQWTBMNXZOaXNNOHczUk5mZmFLMk9EaTVDMkU9ZcClKLoS7AEIIRLnAQocdHZmUUxWZmtVZjVHaWdoOVZLa1drY3ZRbTM0PRJmWjpBRHF0QVp4QU1veFBtblF6Z29BaXgwZ2U1d3F1QWtKblFScTZwbU4rdFFXdG10WVJWZzVzMGc1a0FjLytvTDVwWURadEJtVkZBMldHRGRLTk9CbGpJK1lhbGhicHQwN3JjUT09GAAgACgAMKD6iY2k6oYDOLDowsvYMUCw6MLL2DFKHGEybktISFpHM1UvemJqSldaUzQxTnNsdHRGTT1aHyIduk1FNFNQRVlNZEVVSXpnNFVsSVB4VVk1d21ZUT1lqrH18xLrAQgcEuYBChxGSDZRQktvVC9PNEVMMFF3TU93RHZNbTdoYk09EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXVyYzNKRXQ5c056Um8yZ2Q1OTk4dVFNTG1FVFBiMm1oMXJENTBKRmMxb25TVW9uTU9sTng5Vy9JZ01IMXNBSjRUbXVjMzJBPT0YACAAKAAw8obU0+7xgwM49ruwl9MxQPa7sJfTMUocZkpsUHpKbnpaaVFzQi9TZUtTR1UzWGZUa21FPVoeIhxmZFBKbTdkeGdWUmNHQXpockFKRmxSZEl5YkU9ZaiIFF8S7AEIKBLnAQocQXY3TGlNMHBnSGZEckJLaUIrZjlOaUpiY2x3PRJmWjpBRHF0QVp4QU1veFBtblF6Z29BaXgwZ2U1d3F1L21qeWVMc3kwUE80MExmc0NkcGdMbzU1dTJaU0tNYWxvdUtoK3p3MWYyay8wQ0t6dG5GTFRyTHE1L1hPdG8rbjIyMzR5Zz09GAAgACgAMPCn0YuTwIQDON2n/5ndMUDdp/+Z3TFKHC9rWSt3OEJnRi8rNmE4MHRHY0J0aW1Fc1FBUT1aHyId3DVrcGFqUEpBOG4zcnV0dmt2MVRUd1A4bjMwYz1lgs5AUhLsAQgLEucBChxiSnBKdW9mcmFvc0E4eWZvZk8wUXZqaHZWVFU9EmZaOkFEcXRBWnhBTW94UG1uUXpnb0FpeDBnZTV3cXU5OUpVTzVZR2pTaHh5VTE5VTV0MVoxendnd0dlUDVQZlhDQmw2aEZ5eWVNYUU4OVp0eE1NYnM5Sno2QVpBWW56VENjcC93PT0YACAAKAAwzpzQ8NGDgwM4qKm6icUxQKipuonFMUocdGJUY25mNmdnWit0WWtkRXUzNjNGMTdDa2lFPVofIh32TjdRV210RnVaK1huZzI2Q2Z3a2VlNEVSMkM4PWUAAAAAEuwBCAgS5wEKHHYrMHBLWkpoSHB1MFhFSWZ6YnZiR3N1Wkczaz0SZlo6QURxdEFaeEFNb3hQbW5RemdvQWl4MGdlNXdxdUVCZklzQzBvVyt3RW1uMFBRZ1ZPUFNhQ3NwNkZXZjc3Z0FkYVkyYTE2RzB5UGRYQ2Rkam5laTdLQ0JsVW8vbHpnZVV2T2c9PRgAIAAoADCY/u/mzvGEAziijLrE4zFAooy6xOMxShxvekFjZVRpc3RIL1pjQzdlcFF1M2MzNEU0bmM9Wh8iHdxUZmFoVmlXUzRkN3VibXlXUVNqbWZpRm9uVkk9ZfqR3tsSqwEIARKmAQoceXhKLzZmdmtlY3I3a3A1RVF6QjR0V0xwZGJFPRJOWjpBRHF0QVp6MlZJQ2c4aVF4VnlJeXNJWGI5dlZGT1hUbFVnSnFPcnpic3RmZTBpUm5SOUw5ZVJzZ1RBZWVtUUlSSm1zN1lDb3M4OXhLGAAgACgAMIvU+/GCpoYDOABAAEocYVJDV0xnaEY5YjVJbnFLSUR2dUovanZRa0ZjPVoAZQAAAAAwATgA",
+   "version": 1
+}

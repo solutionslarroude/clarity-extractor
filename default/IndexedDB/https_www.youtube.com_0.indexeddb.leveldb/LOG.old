@@ -1,0 +1,6 @@
+2024/09/27-20:37:45.802 10d4 Creating DB C:\Users\samue\AppData\Local\Google\Chrome\User Data\Profile 8\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb since it was missing.
+2024/09/27-20:37:45.808 10d4 Reusing MANIFEST C:\Users\samue\AppData\Local\Google\Chrome\User Data\Profile 8\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/09/27-20:37:48.309 4ff0 Level-0 table #5: started
+2024/09/27-20:37:48.312 4ff0 Level-0 table #5: 5090 bytes OK
+2024/09/27-20:37:48.314 4ff0 Delete type=0 #3
+2024/09/27-20:37:48.314 4ff0 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

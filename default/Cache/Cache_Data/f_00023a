@@ -1,0 +1,734 @@
+const RUNTIME = 'runtime';
+const ACCOUNT_URL = '/api/v4/accounts/';
+const APPS_URL = '/api/v4/apps';
+const PLAN_URL = '/api/v3/accounts/';
+const CACHED_IDENTITY_URL = '/api/v0/me';
+const IDENTITY_URL = '/api/v4/session';
+const LOCAL_SIDEBAR_URL = 'http://localhost:8000/api/v3/navigation-data/sidebar';
+const LOCAL_TOPBAR_URL = 'http://localhost:8000/api/v3/navigation-data/topbar';
+
+function respondWith(body) {
+  return new Response(JSON.stringify(body));
+}
+
+function removeTrailingSlash(url) {
+  // Removes trailing slash from url
+  return url.replace(/\/(\?|$)/, '$1');
+}
+
+function updateToProxyUrl(request) {
+  const requestUrl = new URL(request.url);
+  let newUrl = new URL(removeTrailingSlash(request.url.replace('/api/v', '/api/v0/proxy/v')));
+  const envParams = new URLSearchParams(location.search);
+  const apiBaseUrl = envParams.get('apiBaseUrl');
+
+  // apiBaseUrl is set only for Preview Environments
+  // and when user is running `yarn dev-staging` where we need to make
+  // CORS requests to Staging Tablestore
+  const useCors = Boolean(apiBaseUrl);
+  let corsParams = {};
+
+  if (useCors) {
+    // Replaces the host with the apiBaseUrl
+    newUrl = new URL(`${apiBaseUrl}${newUrl.pathname}${newUrl.search}`);
+
+    corsParams = {
+      mode: 'cors',
+      credentials: 'include',
+    };
+  } else if (requestUrl.hostname !== location.hostname) {
+    // This is for when the universal layout will try to
+    // make requests directly to the monolith. We need to redirect those
+    // to the tablestore proxy so that it can make a valid request
+
+    // In localhost environment, we also need to ensure the protocol is http
+    if (location.hostname === 'localhost') {
+      newUrl.protocol = 'http:';
+    }
+    newUrl = new URL(`${newUrl.protocol}//${location.host}${newUrl.pathname}${newUrl.search}`);
+  }
+
+  return new Request(newUrl.toString(), {
+    ...request,
+    headers: {
+      ...request.headers,
+      'X-Service-Name': 'tablesui',
+    },
+    ...corsParams,
+  });
+}
+
+try {
+  // By default when there are updates to service worker code it doesn't automatically update
+  // immediately. This tells it to skip waiting and apply the new service worker code
+  // This also helps with dev mode so you don't need to click "update" in devtools for every change.
+  // https://web.dev/service-worker-lifecycle/#skip-the-waiting-phase
+  self.addEventListener('install', function (event) {
+    event.waitUntil(self.skipWaiting());
+  });
+
+  // By default, when service worker is activated, it doesn't automatically apply to the current page(s).
+  // It will apply on next page reload.
+  // This will force it to apply immediately so we can begin intercepting requests from Universal Layout
+  // https://web.dev/service-worker-lifecycle/#clientsclaim
+  self.addEventListener('activate', function (event) {
+    event.waitUntil(self.clients.claim());
+  });
+
+  self.addEventListener('fetch', (event) => {
+    const url = event.request.url;
+
+    if (url.indexOf(ACCOUNT_URL) >= 0 || url.indexOf(PLAN_URL) >= 0 || url.indexOf(APPS_URL) >= 0) {
+      // These requests are redirected to our proxy so that we can make
+      // a valid request to the monolith for the universal layout
+      event.respondWith(
+        caches.open(RUNTIME).then((cache) => {
+          const proxyRequest = updateToProxyUrl(event.request);
+          return fetch(proxyRequest, {}).then((response) => {
+            // Put a copy of the response in the runtime cache.
+            return cache.put(proxyRequest.url, response.clone()).then(() => {
+              return response;
+            });
+          });
+        })
+      );
+    } else if (url.endsWith(CACHED_IDENTITY_URL)) {
+      // Cache our identity call (/me) so we can use it in other responses
+      event.respondWith(
+        caches.open(RUNTIME).then((cache) => {
+          return fetch(event.request, {}).then((response) => {
+            // Put a copy of the response in the runtime cache.
+            return cache.put(CACHED_IDENTITY_URL, response.clone()).then(() => {
+              return response;
+            });
+          });
+        })
+      );
+    } else if (removeTrailingSlash(url).endsWith(IDENTITY_URL)) {
+      // Overrides the /session call from the universal nav since we will already
+      // have that data in our cache from our /me endpoint (see above)
+      event.respondWith(
+        caches.match(CACHED_IDENTITY_URL).then((cachedResponse) => {
+          if (cachedResponse) {
+            return cachedResponse.json().then((identityCache) => {
+              return respondWith(
+                Object.assign(identityCache, {
+                  id: identityCache.zapier_customuser_id,
+                  is_logged_in: true,
+                  user_id: identityCache.zapier_user_id,
+                  user_name: identityCache.email,
+                })
+              );
+            });
+          }
+
+          // The cache should always exist for this because we call our
+          // identity endpoint before rendering the universal nav but
+          // incase it doesn't just pass the request through
+          return fetch(event.request, {});
+        })
+      );
+    } else if (url.startsWith(LOCAL_SIDEBAR_URL)) {
+      // Control sidebar data in local dev env since in the local
+      // dev env the sidebar points to `localhost:8000` by default
+      // which doesn't exist so we don't get a response
+      event.respondWith(
+        respondWith({
+          status: 'success',
+          data: {
+            createOptions: [
+              {
+                title: 'Zaps',
+                description: 'Automated workflows',
+                href: '/webintent/create-zap?entry-point-method=make_a_zap_call_to_action',
+                icon: 'miscBoltAltFill',
+                iconFilled: 'miscBoltAltFill',
+                id: 'Zaps',
+              },
+              {
+                title: 'Tables',
+                description: 'Automated data storage',
+                href: 'https://tables.zapier-staging.com/app/tables?modalOpen=create',
+                icon: 'navTables',
+                iconFilled: 'navTables',
+                id: 'Tables',
+              },
+              {
+                title: 'Interfaces',
+                description: 'Apps, forms, and pages',
+                href: 'https://interfaces.zapier-staging.com/interfaces?modalOpen=create',
+                icon: 'navInterfaces',
+                iconFilled: 'navInterfaces',
+                id: 'Interfaces',
+              },
+              {
+                title: 'Chatbots',
+                description: 'AI-powered chatbot',
+                href: '/app/chatbots?modalOpen=create',
+                icon: 'navAIChatbot',
+                iconFilled: 'navAIChatbot',
+                id: 'Chatbots',
+                tag: 'Beta',
+              },
+              {
+                title: 'Canvas',
+                description: 'Process visualization',
+                href: '/app/canvas/new',
+                icon: 'navCanvas',
+                iconFilled: 'navCanvas',
+                id: 'Canvas',
+                tag: 'Beta',
+              },
+            ],
+            itemGroups: [
+              [
+                {
+                  href: '/app/home',
+                  icon: 'navHome',
+                  iconFilled: 'navHomeFill',
+                  text: 'Home',
+                },
+              ],
+              [
+                {
+                  href: '/app/zaps',
+                  icon: 'miscBoltAltFill',
+                  iconFilled: 'miscBoltAltFill',
+                  text: 'Zaps',
+                },
+                {
+                  href: 'https://tables.zapier-staging.com/app/tables?utm_campaign=zpr-gbl-nua-evr-product_sidenav-prd&utm_medium=product&utm_source=zapier',
+                  icon: 'navTables',
+                  iconFilled: 'navTables',
+                  text: 'Tables',
+                },
+                {
+                  href: 'https://interfaces.zapier-staging.com/interfaces?utm_campaign=zpr-gbl-nua-evr-product_sidenav-prd&utm_medium=product&utm_source=zapier/',
+                  icon: 'navInterfaces',
+                  iconFilled: 'navInterfaces',
+                  text: 'Interfaces',
+                },
+                {
+                  href: '/app/chatbots',
+                  text: 'Chatbots',
+                  icon: 'navAIChatbot',
+                  iconFilled: 'navAIChatbot',
+                  tag: 'Beta',
+                },
+                {
+                  href: '/app/canvas',
+                  text: 'Canvas',
+                  icon: 'navCanvas',
+                  iconFilled: 'navCanvas',
+                  tag: 'Beta',
+                },
+              ],
+              [
+                {
+                  href: '/app/connections',
+                  icon: 'navApps',
+                  iconFilled: 'navAppsFill',
+                  text: 'Apps',
+                },
+                {
+                  href: '/app/history',
+                  icon: 'miscClock',
+                  iconFilled: 'miscClockFill',
+                  text: 'Zap History',
+                },
+              ],
+            ],
+          },
+        })
+      );
+    } else if (url.startsWith(LOCAL_TOPBAR_URL)) {
+      // Control topbar data in local dev env since in the local
+      // dev env the topbar points to `localhost:8000` by default
+      // which doesn't exist so we don't get a response
+      event.respondWith(
+        respondWith({
+          status: 'success',
+          data: {
+            topBarMenu: [
+              {
+                heroArea: {
+                  heading: 'Zapier Automation Platform',
+                  subheading: 'No-code automation across 6,000+ apps',
+                  submenu: [
+                    {
+                      text: 'PRODUCTS',
+                      href: null,
+                      submenu: [
+                        {
+                          text: 'Zaps',
+                          href: '/workflows',
+                          icon: 'miscBoltAltFill',
+                          description: 'Do-it-yourself automation for workflows',
+                        },
+                        {
+                          text: 'Tables',
+                          href: '/tables',
+                          icon: 'navTables',
+                          description: 'Databases designed for workflows',
+                        },
+                        {
+                          text: 'Interfaces',
+                          href: '/interfaces',
+                          icon: 'navInterfaces',
+                          description: 'Custom pages to power your workflows',
+                        },
+                      ],
+                    },
+                    {
+                      text: 'CAPABILITIES',
+                      href: null,
+                      submenu: [
+                        {
+                          text: 'App integrations',
+                          description: 'Explore 6,000+ app connections',
+                          href: '/apps',
+                        },
+                        {
+                          description: 'Cutting-edge AI to upgrade your workflows',
+                          href: '/ai',
+                          text: 'AI features',
+                        },
+                        {
+                          text: 'Security',
+                          description: 'Enterprise-grade security',
+                          href: '/security-compliance',
+                        },
+                      ],
+                    },
+                  ],
+                },
+                promoArea: {
+                  header: {
+                    heading: "What's new",
+                  },
+                  submenu: [
+                    {
+                      text: 'Canvas',
+                      description: 'Plan and map your workflows with AI',
+                      href: '/canvas',
+                      icon: 'navCanvas',
+                      tag: 'Beta',
+                    },
+                    {
+                      text: 'Chatbots',
+                      href: '/ai/chatbot',
+                      icon: 'navAIChatbot',
+                      description: 'Custom no-code chatbots trained on your data',
+                      tag: 'Beta',
+                    },
+                  ],
+                },
+                text: 'Product',
+                variant: 'product-2',
+                bottomLinks: [
+                  {
+                    text: 'Explore templates',
+                    icon: {
+                      selected: 'actionExplore',
+                      unselected: 'actionExplore',
+                    },
+                    href: '/templates',
+                  },
+                  {
+                    text: 'Join Zapier Early Access',
+                    icon: 'miscBoltAlt',
+                    href: '/early-access',
+                  },
+                ],
+              },
+              {
+                text: 'Solutions',
+                variant: 'variant-c',
+                submenu: [
+                  {
+                    text: 'By use case',
+                    href: null,
+                    icon: {
+                      selected: 'navBriefcase',
+                      unselected: 'navBriefcase',
+                    },
+                    submenu: [
+                      {
+                        text: 'Lead management',
+                        href: '/lead-management',
+                      },
+                      {
+                        text: 'Sales pipeline',
+                        href: '/sales-pipeline-management',
+                      },
+                      {
+                        text: 'Marketing campaigns',
+                        href: '/marketing-campaigns',
+                      },
+                      {
+                        text: 'Customer support',
+                        href: '/customer-support-management',
+                      },
+                      {
+                        text: 'Data management',
+                        href: '/data-management',
+                      },
+                      {
+                        text: 'Project management',
+                        href: '/project-management',
+                      },
+                      {
+                        text: 'Tickets and incidents',
+                        href: '/ticket-incident-management',
+                      },
+                    ],
+                  },
+                  {
+                    text: 'By app',
+                    href: null,
+                    icon: {
+                      selected: 'miscList',
+                      unselected: 'miscList',
+                    },
+                    submenu: [
+                      {
+                        text: 'Salesforce',
+                        href: '/apps/salesforce/integrations ',
+                      },
+                      {
+                        text: 'Microsoft Dynamics CRM',
+                        href: '/apps/microsoft-dynamics-crm/integrations',
+                      },
+                      {
+                        text: 'HubSpot',
+                        href: '/apps/hubspot/integrations',
+                      },
+                      {
+                        text: 'Marketo',
+                        href: '/apps/marketo/integrations',
+                      },
+                      {
+                        text: 'Slack',
+                        href: '/apps/slack/integrations',
+                      },
+                      {
+                        text: 'Microsoft Teams',
+                        href: '/apps/microsoft-teams/integrations',
+                      },
+                      {
+                        text: 'Zendesk',
+                        href: '/apps/zendesk/integrations',
+                      },
+                      {
+                        text: 'Jira Software Cloud',
+                        href: '/apps/jira-software-cloud/integrations',
+                      },
+                      {
+                        text: 'Jira Service Management',
+                        href: '/apps/jira-service-management/integrations',
+                      },
+                    ],
+                  },
+                  {
+                    text: 'By team',
+                    href: null,
+                    icon: {
+                      selected: 'personGroup',
+                      unselected: 'personGroup',
+                    },
+                    submenu: [
+                      {
+                        text: 'Marketing',
+                        href: '/solutions/marketing',
+                      },
+                      {
+                        text: 'IT',
+                        href: '/solutions/it',
+                      },
+                      {
+                        text: 'Sales',
+                        href: '/solutions/sales',
+                      },
+                      {
+                        text: 'RevOps',
+                        href: '/solutions/revops',
+                      },
+                      {
+                        text: 'Customer Support',
+                        href: '/solutions/customer-support',
+                      },
+                      {
+                        text: 'Leaders',
+                        href: '/solutions/leaders',
+                      },
+                    ],
+                  },
+                  {
+                    text: 'By company size',
+                    href: null,
+                    icon: {
+                      selected: 'navExplore',
+                      unselected: 'navExplore',
+                    },
+                    submenu: [
+                      {
+                        text: 'Startups',
+                        href: '/solutions/startups',
+                      },
+                      {
+                        text: 'Small and medium businesses',
+                        href: '/solutions/smb',
+                      },
+                      {
+                        text: 'Enterprise',
+                        href: '/solutions/enterprise',
+                      },
+                    ],
+                  },
+                ],
+                bottomLinks: [
+                  {
+                    text: 'Explore templates',
+                    icon: {
+                      selected: 'actionExplore',
+                      unselected: 'actionExplore',
+                    },
+                    href: '/templates',
+                  },
+                  {
+                    text: 'Join Zapier Early Access',
+                    icon: 'miscBoltAlt',
+                    href: '/early-access',
+                  },
+                ],
+                promoArea: [
+                  {
+                    type: 'article-stub',
+                    text: 'How Zapier Zaps',
+                    href: '/l/lead-management-automation-canvas',
+                    imageUrl:
+                      'https://res.cloudinary.com/zapier-media/image/upload/q_auto/f_auto/v1695750563/Navigation/Logged%20Out/Frame_12120_ef7x6o.png',
+                    description: 'How Zapier’s RevOps team automates lead management',
+                    altText: 'Person icon with workflow graphic',
+                  },
+                  {
+                    type: 'article-stub',
+                    text: 'How Zapier Uses AI',
+                    href: '/resources/webinar/leaders-using-ai',
+                    imageUrl:
+                      'https://res.cloudinary.com/zapier-media/image/upload/q_auto/f_auto/v1695750563/Navigation/Logged%20Out/Mask_group_aprx5j.png',
+                    description: 'Using AI & Zapier in Marketing, Sales, & RevOps',
+                    altText: 'Graphic that shows webhooks, ChatGPT, and Slack apps connected',
+                  },
+                ],
+              },
+              {
+                text: 'Resources & Support',
+                variant: 'variant-b',
+                submenu: [
+                  {
+                    text: 'By team',
+                    href: null,
+                    icon: {
+                      selected: 'personGroup',
+                      unselected: 'personGroup',
+                    },
+                    submenu: [
+                      {
+                        text: 'Marketing',
+                        href: '/resources/marketing',
+                      },
+                      {
+                        text: 'Leaders',
+                        href: '/resources/leaders',
+                      },
+                      {
+                        text: 'IT',
+                        href: '/resources/it',
+                      },
+                      {
+                        text: 'Sales operations',
+                        href: '/resources/sales',
+                      },
+                    ],
+                  },
+                  {
+                    text: 'Learn more',
+                    href: null,
+                    icon: {
+                      selected: 'miscLearn',
+                      unselected: 'miscLearn',
+                    },
+                    submenu: [
+                      {
+                        text: 'Blog',
+                        href: '/blog/',
+                      },
+                      {
+                        text: 'Zapier Learn',
+                        href: 'https://learn.zapier.com',
+                      },
+                      {
+                        text: 'Events and webinars',
+                        href: '/resources/events',
+                      },
+                      {
+                        text: 'Customer stories',
+                        href: '/customer-stories',
+                      },
+                      {
+                        text: 'Zapier guides',
+                        href: '/resources/guides',
+                      },
+                    ],
+                  },
+                  {
+                    text: 'Get help',
+                    href: null,
+                    icon: {
+                      selected: 'navHelp',
+                      unselected: 'navHelp',
+                    },
+                    submenu: [
+                      {
+                        text: 'Help Center',
+                        href: '/help',
+                      },
+                      {
+                        text: 'Community',
+                        href: 'https://community.zapier.com/',
+                      },
+                      {
+                        text: 'Hire an Expert',
+                        href: '/experts',
+                      },
+                      {
+                        text: 'Support Services',
+                        href: '/l/support-services',
+                      },
+                      {
+                        text: 'Contact Support',
+                        href: '/app/get-help',
+                      },
+                    ],
+                  },
+                ],
+                bottomLinks: [
+                  {
+                    text: 'Explore templates',
+                    icon: {
+                      selected: 'actionExplore',
+                      unselected: 'actionExplore',
+                    },
+                    href: '/templates',
+                  },
+                  {
+                    text: 'Join Zapier Early Access',
+                    icon: 'miscBoltAlt',
+                    href: '/early-access',
+                  },
+                ],
+                promoArea: [
+                  {
+                    type: 'article-stub',
+                    text: 'Zapier quick-start guide',
+                    href: '/resources/guides/quick-start',
+                    imageUrl:
+                      'https://cdn.zapier.com/storage/photos/8d754b5e8481fdd190dd7b1cf7738a8d.png',
+                    description: 'Create your first Zap with ease',
+                    altText:
+                      "A simplified user interface design representing a portion of Zapier's platform. There's a vertical menu of platform options. At the top is a dominant orange button with text inside that reads \"Create Zap.\" Beneath the button is a stack of menu icons to represent Zapier's dashboard and zaps.",
+                  },
+                  {
+                    type: 'link-list',
+                    text: 'Developer resources',
+                    href: null,
+                    links: [
+                      {
+                        href: '/developer-platform',
+                        text: 'Developer Platform',
+                      },
+                      {
+                        text: 'Build an integration',
+                        href: '/developer-platform/integrations',
+                      },
+                      {
+                        text: 'Embed an integration',
+                        href: '/developer-platform/embed-tools',
+                      },
+                      {
+                        text: 'Integration Partner Program',
+                        href: '/developer-platform/partner-program',
+                      },
+                      {
+                        text: 'Documentation',
+                        href: 'https://platform.zapier.com',
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                variant: 'link',
+                text: 'Pricing',
+                href: '/pricing',
+              },
+            ],
+            callToAction: {
+              href: '/l/contact-sales',
+              text: 'Contact Sales',
+            },
+            linksInApp: [
+              {
+                text: 'Help',
+                icon: 'navHelp',
+                href: '/help',
+              },
+              {
+                text: 'Explore Zapier',
+                icon: 'navExplore',
+                href: '/apps',
+              },
+            ],
+          },
+        })
+      );
+    } else if (event.request.destination === 'image') {
+      // Special handling for favicon.ico since we just launched new icon
+      // Otherwise users will see the old icon until they clear their browser cache
+      if (event.request.url.endsWith('favicon.ico')) {
+        event.respondWith(fetch(event.request));
+        return;
+      }
+
+      // Ignore chrome extension images
+      if (!event.request.url.startsWith('https')) {
+        return;
+      }
+
+      // Caches images so we don't keep refetching them, generated
+      // app images have a no-cache header that prevents the browser
+      // from caching them
+      event.respondWith(
+        caches.open(RUNTIME).then((cache) => {
+          return caches.match(event.request).then((cacheResponse) => {
+            if (cacheResponse) {
+              // Respond with image in cache
+              return cacheResponse;
+            }
+
+            // Cache miss so go fetch image
+            return fetch(event.request, {}).then((response) => {
+              // Cache image and respond
+              return cache.put(event.request, response.clone()).then(() => {
+                return response;
+              });
+            });
+          });
+        })
+      );
+    }
+  });
+} catch (e) {
+  console.error('Error in service worker', e);
+}

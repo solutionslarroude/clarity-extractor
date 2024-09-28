@@ -13,7 +13,7 @@ params = {"numOfDays": "1"}
 
 # Cabeçalhos da requisição
 headers = {
-   "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjQ4M0FCMDhFNUYwRDMxNjdEOTRFMTQ3M0FEQTk2RTcyRDkwRUYwRkYiLCJ0eXAiOiJKV1QifQ.j3tovq13eckm74SZnx2H4T66YJpYobGWK7uYbcLyya3r2hwi_9kEX1zEeH_seFpb0y42THKYGmRsYVau0LjjlCdLHMsnwtKySlWICHxYeOh9JTwXD9Lry3fg2MCF2qWyxx7lrdiFyyekMK9b2YNa4c0bY7AXhs54FkQWnSeRk6l3U1Wc6gzrEu7ZuKtmOZXlQIaFep8gno3Mer5VGKgvdlw37QXeuT55eQ6OGZUVrb3_FekMnMoEdu7Ordt-xbzxN9JfLaFZdCF2Kj8h5t131HnA4TuNifqVnoRrdfEGdJwzHQH-efwTRdeoaVQDg9VDxmF55_M8mY_Q-xSL2toXvQ",
+   "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjQ4M0FCMDhFNUYwRDMxNjdEOTRFMTQ3M0FEQTk2RTcyRDkwRUYwRkYiLCJ0eXAiOiJKV1QifQ.eyJqdGkiOiIwOTE4OTgyOS1lMTIxLTQ2NjAtYjZkYi01Zjg1NDY5MWU4ZTAiLCJzdWIiOiIyNDQzODE5MTQwMTU3MjA5Iiwic2NvcGUiOiJEYXRhLkV4cG9ydCIsIm5iZiI6MTcyNzQ3OTQ2OCwiZXhwIjo0ODgxMDc5NDY4LCJpYXQiOjE3Mjc0Nzk0NjgsImlzcyI6ImNsYXJpdHkiLCJhdWQiOiJjbGFyaXR5LmRhdGEtZXhwb3J0ZXIifQ.XXDvVoYkSxXSDWQK9Pi6DFaOPoXtKxioOA3HXxhHa_J8UOgNB6_v2uhWNbLLsVkf4EFmKhfYy_QxRW_XXP49ZgYObEFG8TvYJsM7DOsQNiUoatALrpGdYkZ0iKxgFMtiU3JD6GkG9dv_98EjNM343CFEoRToCa5foLwZaAyeFETVQ2TkFSVgcj9jPf85EC1qINyCMlQRrOqyOpZ3pAddor-20mCJBs4arL43ToLSXqEQxC7297B9hd-D31e6bErFJcPh7-rahiiBMnZ3NLDZXDV8VQIiDy1E3UjIDQ9-_iFPd33rj9BOnJrPkBmBH0Vopmx6uNNZstHk_4aTOgBo8w",
    "Content-type": "application/json"
 }
 
@@ -41,7 +41,7 @@ def process_request():
     while True:
         # Verifica se são meia-noite e 10
         now = datetime.now()
-        if now.hour == 0 and now.minute == 30:
+        if now.hour == 20 and now.minute == 25:
             print("Hora de fazer a requisição!")
             response = requests.get(url, headers=headers)
 
